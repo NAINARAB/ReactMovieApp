@@ -1,0 +1,395 @@
+* {
+    box-sizing: border-box !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+.hed {
+    color: yellow;
+    background-color: #055C9D;
+    padding: 1em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    box-shadow: 0 4px 16px black;
+}
+
+
+.bdy {
+    background-color: #282c34;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.cntr {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-75%, -75%);
+}
+
+.logform {
+    border-radius: 20px;
+    padding: 2.5em;
+    background-color: white;
+    border-bottom: 1px solid #f2f2f2;
+    width: 150%;
+}
+
+.loginpt {
+    outline: none;
+    border: 1.5px solid rgb(238, 217, 217);
+    padding: 1em;
+    margin: 0.3em 0px 2em 0px;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+
+.loginpt:focus {
+    box-shadow: 0px 0px 4px rgb(100, 81, 223);
+    border: 1.5px solid rgba(100, 81, 223, 0.509);
+}
+
+.logsbmt {
+    background-color: #ff9899;
+    color: white;
+    font-size: x-large;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.logsbmt:hover {
+    background-color: rgba(240, 75, 204, 0.829);
+}
+
+.searchdiv {
+    border: 1px solid peachpuff;
+    border-radius: 25px;
+    width: 280px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.serch {
+    margin: 0;
+    padding: 1em 0 1em 1.4em;
+    width: 85%;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+
+.serchicon {
+    width: 15%;
+    margin: 0;
+    overflow: hidden;
+    background-color: peachpuff;
+}
+
+.serchicon i {
+    padding: 10px 10px 0 7px !important;
+    font-size: 20px
+}
+
+.serch::placeholder {
+    color: white;
+}
+
+::placeholder {
+    color: grey
+}
+
+i {
+    color: black;
+    padding: 4px 4px 15px 2px;
+}
+
+.logout {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    color: white;
+    margin-left: 1em;
+    font-size: 1em;
+    display: inline;
+}
+
+.homecontent {
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/739/262/425/movies-hollywood-movies-wallpaper-preview.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+
+img[alt]::first-line {
+    color: red;
+}
+
+.homehover {
+    background-color: rgba(0, 0, 0, 0.76);
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.searchback{
+    background-color: rgba(0, 0, 0, 0.76);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.homehover h1,
+p,
+h2 {
+    margin: 0 !important;
+}
+
+.homehover h1 {
+    font-size: 50px;
+}
+
+.homehover p {
+    font-size: 12px;
+}
+
+.readmore {
+    color: white;
+    font-weight: bold;
+    border-radius: 25px;
+    width: fit-content;
+    padding: 10px 30px;
+    background-color: red;
+    outline: none;
+    border: none;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+.readmore:active {
+    background-color: rgba(255, 0, 0, 0.692);
+}
+
+.movielist {
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+
+.movielist::-webkit-scrollbar{
+    display: none;
+}
+
+
+.card {
+    display: inline;
+    transition: all 0.3s;
+    margin: 0 1em;
+    border-radius: 20px;
+}
+
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.card:active {
+    transform: translateY(0px);
+}
+
+.card img {
+    width: 190px;
+    height: 260px;
+}
+
+.card i {
+    color: gold;
+}
+
+.cardtitle {
+    padding: 1em;
+    background-color: #048F70;   
+}
+
+.cardtitle button {
+    padding: 0;
+    margin: 0;
+    margin-right: 0.5em;
+    background-color: transparent;
+    float: right;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.gradient {
+    background: linear-gradient(to right, #3a6186, #89253e);
+}
+
+.desc {
+    display: flex;
+    flex-direction: row;
+    padding: 2em 4em;
+    overflow: scroll;
+}
+
+.desc::-webkit-scrollbar {
+    display: none;
+}
+
+iframe {
+    margin: 0 1em;
+}
+
+.back {
+    background-color: #048F70;
+    border: none;
+    border-radius: 50%;
+    padding: 0.8em 0.77em 0 0.93em;
+    transition: all 0.3s;
+}
+
+.back:hover {
+    background-color: #048f71c9;
+}
+
+.back:active {
+    transform: translateX(-6px);
+}
+
+.back i {
+    color: white;
+}
+
+.coldiv4 {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 40%;
+}
+
+.coldiv6 {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.coldiv6 img {
+    height: 90%;
+    width: 80%;
+}
+
+.searchmovie {
+    position: fixed;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to right, #000428, #004e92);;
+    width: 80%;
+    z-index: 1;
+    box-shadow: 2px 2px 4px black;
+    padding: 2em;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+
+.searchclose {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+}
+
+.searchclose button {
+    padding: 0.62em 0.68em 0 0.80em;
+    margin: 0;
+    color: red;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+}
+
+.searchclose i {
+    font-size: 25px;
+}
+
+.backdiv{
+    padding: 2.8em 4em 0 4em; 
+    margin-top: 4em
+}
+
+.flex::-webkit-scrollbar {
+    width: 20px;
+}
+
+.flex::-webkit-scrollbar-track {
+    border-radius: 20px;
+}
+
+.flex::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+}
+
+.flex::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+}
+
+.flex::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+
+.flex::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+}
+
+
+@media only screen and (max-width: 990px) {
+    .desc {
+        flex-direction: column-reverse;
+    }
+
+    .coldiv4 {
+        width: 100%;
+    }
+
+    .coldiv6 {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 485px){
+    .backdiv{
+        padding-top: 4em;
+    }
+}
